@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction: row;
+}
+
+.mensagem{
+    background-color: orange;
+    width: 40%;
+    height:100vh;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 1rem;
+}
+
+.mensagem>div{
+    width: 25rem;
+    height: 15rem;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.card{
+    width: 20rem;
+    height: 20rem;
+    background-color: RGB(229 229 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem 15rem;
+}
+
+.card>div{
+    width: 15rem;
+    height: 3rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card>div>input{
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    outline: none;
+}
+
+.card>button{
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: RGB(255 198 122);
+    transition: .5s;
+}
+
+.card>button:hover{
+    transition: .5s;
+    background-color: rgb(255,165,0);
+}

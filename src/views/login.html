@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/login.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>BancoDemo</title>
+</head>
+<body>
+    <section class="mensagem">
+        <div>
+            <h1>Já é cliente?</h1>
+            <h3>Acesse sua conta usando CPF e senha.</h3>
+        </div>
+        <img src="/img/loginperson.png" width="550px" height="600px"/>
+    </section>
+    <section>
+        <div class="card">
+            <div>
+                <h1 id="error">Insira os dados corretamente.</h1>
+            </div>
+            <div>
+                <label>CPF:</label>
+                <input type="text" id="cpf"/>
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" id="senha">
+            </div>
+            <button class="btn" id="botao">Entrar</button>
+        </div>
+    </section>
+    <script src="/Js/validar.js"></script>
+</body>
+</html>

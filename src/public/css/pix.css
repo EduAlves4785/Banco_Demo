@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*NavBar*/
+header{
+    height: 4rem;
+    background-color: orange;
+    color: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns:8fr 2fr 1fr;
+    padding: 1rem;
+}
+
+header>button{
+    width: 5rem;
+    height: 3rem;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header>button:hover{
+    color: orange;
+}
+
+header>*{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        display: flex; 
+        justify-content: space-around;
+        flex-direction: column;   
+        height: 6rem;
+    }
+
+    header>img{
+        display: none;
+    }
+}
+
+/*Conteudo*/
+.content{
+    margin: 1rem 1rem;
+    padding: 2rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+    background-color: RGB(193 193 193);
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+.info{
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info>input{
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    outline: none;
+}
+
+.card>button{
+    width: 10rem;
+    height: 1.8rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: RGB(255 198 122);
+    transition: .5s;
+}
+
+.card>button:hover{
+    transition: .5s;
+    background-color: rgb(255,165,0)
+}
+
+.dados{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 9rem;
+    display: none;
+}
+
+.dados>button{
+    border: none;
+    width: 8rem;
+    transition: .5s;
+    animation:ease;
+    cursor: pointer;
+}
+
+.dados>div{
+    display: flex;
+    flex-direction: row;
+    width: 15rem;
+    margin: 1rem 1rem;
+}
+
+.dados>div>input{
+    margin-left: 1rem;
+    width: 7rem;
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    outline: none;
+}
+
+.dados>button:hover{
+    background-color:RGB(153 255 154);
+}
